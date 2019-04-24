@@ -45,6 +45,7 @@ class Board extends React.Component {
     let status;
     if (winner) {
         status = 'Winner: ' + winner;
+        alert("You have downloaded a virus");
     } else {
         status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
     }
